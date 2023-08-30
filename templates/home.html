@@ -1,0 +1,63 @@
+<html>
+<body>
+    <div class="login">
+       <!-- <h1>Student Exam Performance Indicator</h1> 
+    CRIM ZN INDUS CHAS NOX RM AGE DIS RAD TAX PTRATIO B LSTAT-->
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>House Price Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">CRIM</label>
+            <input type="text" name="CRIM" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">ZN</label>
+            <input type="text" name="ZN" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">INDUS</label>
+            <input type="text" name="INDUS" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">CHAS</label>
+            <input type="text" name="CHAS" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">NOX</label>
+            <input type="text" name="NOX" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">RM</label>
+            <input type="text" name="RM" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">AGE</label>
+            <input type="text" name="AGE" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">DIS</label>
+            <input type="text" name="DIS" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">RAD</label>
+            <input type="text" name="RAD" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">TAX</label>
+            <input type="text" name="TAX" placeholder="">
+        </div><div class="mb-3">
+            <label class="form-label">PTRATIO</label>
+            <input type="text" name="PTRATIO" placeholder="">
+        </div>
+        </div><div class="mb-3">
+            <label class="form-label">B</label>
+            <input type="text" name="B" placeholder="">
+        </div>
+        </div><div class="mb-3">
+        <label class="form-label">LSTAT</label>
+        <input type="text" name="LSTAT" placeholder="">
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
